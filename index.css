@@ -1,0 +1,28 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    padding: 10px 50px;
+  }
+
+@media only screen and (min-width: 600px) {
+    .container {
+      padding: 10px 100px;
+    }
+
+    img {
+      float: right;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .container {
+      padding: 10px 200px;
+    }
+
+    img {
+      float: right;
+    }
+  }

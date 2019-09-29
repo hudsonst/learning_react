@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Hello World</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+ <div class="container"></div>
+  <script
+    src="https://unpkg.com/react@16/umd/react.development.js">
+  </script>
+  <script
+    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+  </script>
+  <script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  </script>
+  <script type="text/babel">
+function App(props) {
+  return (
+      <div>
+      {props.children}
+      </div>
+  );
+}
+// Nested elements inside the App
+ReactDOM.render(
+  <App>
+    <header>
+      <h1>Sally Student</h1>
+      <address>342 Never St,<br/> Atlantis, Under-The-Sea<br/>
+      sallywashere@seeyoulater.bye<br/> 867-5309<br/>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" height="200px" alt="Sally" /></address>
+    </header>
+    <main>
+    <section className="education">
+          <h2>Education</h2>
+            <p>Masters of Sarcasm, University of Atlantis, 5010 BCE
+            </p>
+        </section>
+        <section className="employment">
+          <h2>Employment</h2>
+          <div className="job">
+            <p>Society of Sooth Sayers<br />
+            Main Fortune Teller<br />
+            5005 BCE until Whenever Atlantis went under</p>
+            <p>Told fortunes. Relatively decent batting average until she died.</p>
+          </div>
+          <div className="job">
+            <p>House of Yellow Shirts<br />
+            Yellow Shirt Wearer<br />
+            5009 BCE - 5005 BCE</p>
+            <p>Wore a Yellow shirt.</p>
+          </div>
+        </section>
+    </main>
+ </App>,
+ document.querySelector('.container')
+ );
+
+  </script>
+</body>
+</html>
